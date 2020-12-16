@@ -7,5 +7,5 @@
 #       - chmod 400 keypair.pem
 #       - yum -y install openssh-server openssh-clients
 #       - systemctl enable sshd.service
-#       - ssh -T -o StrictHostKeyChecking=no -i keypair.pem ec2-3-83-96-126.compute-1.amazonaws.com
-#       - scp -i keypair.pem test ec2-3-83-96-126.compute-1.amazonaws.com:./testing
+#       - ssh -T -o StrictHostKeyChecking=no -i keypair.pem ec2-52-23-176-71.compute-1.amazonaws.com
+#       - scp -i keypair.pem test ec2-52-23-176-71.compute-1.amazonaws.com:./testing
