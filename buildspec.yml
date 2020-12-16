@@ -2,9 +2,9 @@ version: 0.2
 
 
 phases:
-  pre_build:
+  build:
     commands:
-     - chmod 400 keypair.pem
+      - chmod 400 keypair.pem
       - yum -y install openssh-server openssh-clients
       - systemctl enable sshd.service
       - ssh -T -o StrictHostKeyChecking=no -i keypair.pem ec2-3-83-96-126.compute-1.amazonaws.com
